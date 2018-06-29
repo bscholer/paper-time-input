@@ -3,6 +3,10 @@
   "description": "Polymer element to enable users to input 12 and 24 hour times.",
   "main": "paper-time-input.js",
   "dependencies": {
+    "@polymer/paper-dropdown-menu": "^3.0.0-pre.21",
+    "@polymer/paper-input": "^3.0.0-pre.21",
+    "@polymer/paper-item": "^3.0.0-pre.21",
+    "@polymer/paper-listbox": "^3.0.0-pre.21",
     "@polymer/polymer": "^3.0.0"
   },
   "devDependencies": {

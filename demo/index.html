@@ -22,10 +22,34 @@
   </head>
   <body>
     <div class="vertical-section-container centered">
-      <h3>Basic paper-time-input demo</h3>
+      <h3>Basic demo</h3>
       <demo-snippet>
         <template>
-          <paper-time-input></paper-time-input>
+          <paper-time-input value="{{resultBasic}}"></paper-time-input>
+          <button onclick="validate()">Validate</button>
+          <script type="text/javascript">
+              function validate(){
+                  document.querySelector('paper-time-input').validate();
+              }
+          </script>
+        </template>
+      </demo-snippet>
+      <h3>24 hour format</h3>
+      <demo-snippet>
+        <template>
+          <paper-time-input format="24" value="{{result24}}"></paper-time-input>
+        </template>
+      </demo-snippet>
+      <h3>Pre Set Time</h3>
+      <demo-snippet>
+        <template>
+          <paper-time-input value="{{result}}" hour="4" min="20" am-pm="AM"></paper-time-input>
+        </template>
+      </demo-snippet>
+      <h3>Disabled</h3>
+      <demo-snippet>
+        <template>
+          <paper-time-input disabled></paper-time-input>
         </template>
       </demo-snippet>
     </div>
